@@ -68,4 +68,41 @@ out = '''red apple
 yellow banana
 green mango'''
 st.code(out,language='python')
+st.write("The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.")
+st.markdown('**Example**:')
+zip_fun = '''students = [“Rajesh”, “kumar”, “Kriti”]
+marks = [87, 90, 88]
+dictionary = dict(zip(students, marks))
+print(dictionary)'''
+st.code(zip_fun, language='python')
+st.markdown('**Output**:')
+st.code("{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}",language='python')
 
+
+
+st.header("6. Assigning multiple list values to a variable")
+st.write("If you want to assign some specific values of a list to a variable and all the remaining values to another variable in a list format, you can use the following technique:")
+st.markdown('**Example**:')
+var = '''mylist = [1,2,3,4,5]
+a,*b = mylist
+print(f”a =”,a)
+print(f”b =”,b)'''
+st.code(var, language='python')
+st.markdown('**Output**:')
+out='''a = 1
+b = [2, 3, 4, 5]'''
+st.code(out,language='python')
+st.write("This process is also called list unpacking and you can apply this method for more than 2 variables also!")
+
+
+
+st.header("7. Remove duplicate list items")
+st.write("Do you have duplicate items in your list which you want to remove? You can do that with only one line of code using the set() function")
+st.markdown('**Example**:')
+lis = '''mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9]
+newlist = set(mylist)
+print(newlist)'''
+st.code(lis, language='python')
+st.markdown('**Output**:')
+out='''{1, 2, 3, 4, 5, 6, 7, 8, 9}'''
+st.code(out,language='python')
