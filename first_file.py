@@ -15,8 +15,8 @@ st.write ("Example")
 st.write ("If we want to check and print the length of a list:")
 
 walrus = '''Mylist = [1,2,3]
-        if(l := len(mylist) > 2)
-        print(l)'''
+if(l := len(mylist) > 2)
+print(l)'''
 st.code(walrus, language='python')
 
 st.write ("Output:")
