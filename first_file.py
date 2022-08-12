@@ -18,7 +18,7 @@ if(l := len(mylist) > 2)
 print(l)'''
 st.code(walrus, language='python')
 st.markdown('**Output**:')
-st.code(3,language='python')
+st.success(3)
 
 
 st.header("2. Splitting a string")
