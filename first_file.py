@@ -11,13 +11,34 @@ st.write("The compactness of Python can make a developer’s life a lot easier w
 
 st.header("1. Walrus operator")
 st.write("The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.")
-st.write ("Example")
+st.markdown('**Example**:')
 st.write ("If we want to check and print the length of a list:")
-
 walrus = '''Mylist = [1,2,3]
 if(l := len(mylist) > 2)
 print(l)'''
 st.code(walrus, language='python')
-
-st.write ("Output:")
+st.markdown('**Output**:')
 st.code(3,language='python')
+
+
+st.header("2. Splitting a string")
+st.write("If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!")
+st.markdown('**Example**:')
+string = '''hello world
+string.split()'''
+st.code(string, language='python')
+st.markdown('**Output**:')
+st.code("['hello','world']",language='python')
+
+
+
+st.header("3. Reversing a string")
+st.write("If you want to reverse a given string, you can do that with only one line of code using the negative indexing of the string.")
+st.markdown('**Example**:')
+string = '''str=”hello world!”
+a=str[::-1]
+print(a)'''
+st.code(string, language='python')
+st.markdown('**Output**:')
+st.code("!dlrow olleh",language='python')
+
