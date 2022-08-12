@@ -35,10 +35,37 @@ st.code("['hello','world']",language='python')
 st.header("3. Reversing a string")
 st.write("If you want to reverse a given string, you can do that with only one line of code using the negative indexing of the string.")
 st.markdown('**Example**:')
-string = '''str=”hello world!”
+stringr = '''str=”hello world!”
 a=str[::-1]
 print(a)'''
-st.code(string, language='python')
+st.code(stringr, language='python')
 st.markdown('**Output**:')
 st.code("!dlrow olleh",language='python')
+
+
+st.header("4. Merging two dictionaries")
+st.write("This amazing trick will help you merge two dictionaries with just 1 line of code. We just need to use ** in front of the name of the two dictionaries like below two merge them into a single dictionary:")
+st.markdown('**Example**:')
+dic = '''d1 = {“a”: 10, “b”:20}
+d2 = {“c”: 30, “d”:40}
+d3 = {**d1, **d2}
+print(d3)'''
+st.code(dic, language='python')
+st.markdown('**Output**:')
+st.code("{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}",language='python')
+
+
+st.header("5. The zip() function")
+st.write("The zip() function in python can make your life a lot easier when working with lists and dictionaries. It is used to combine several lists of the same length.")
+st.markdown('**Example**:')
+zip_fun = '''colour = [“red”, “yellow”, “green”]
+fruits = [‘apple’, ‘banana’, ‘mango’]
+for colour, fruits in zip(colour, fruits):
+print(colour, fruits)'''
+st.code(zip_fun, language='python')
+st.markdown('**Output**:')
+out = '''red apple
+yellow banana
+green mango'''
+st.code(out,language='python')
 
