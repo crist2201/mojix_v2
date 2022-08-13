@@ -28,7 +28,12 @@ if(l := len(mylist) > 2)
 print(l)'''
 st.code(walrus, language='python')
 st.markdown('**_Output_**:')
-st.success(3)
+st.write('''
+<style>
+.element-container{
+    background-color: green
+}
+</style>''', 3)
 
 
 st.header("2. Splitting a string")
@@ -76,9 +81,8 @@ st.markdown('**_Output_**:')
 out = '''red apple
 yellow banana
 green mango'''
-c = st.container()
-c.success(out)
-c.success(out)
+st.success(out)
+
 st.write("The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.")
 st.markdown('**_Example_**:')
 zip_fun = '''students = [“Rajesh”, “kumar”, “Kriti”]
