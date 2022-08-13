@@ -1,7 +1,7 @@
 import streamlit as st
 #from streamlit_ace import st_ace
 
-st.title('10 Cool Beginner Python Tricks That Will Make Your Life Easier')
+st.title('14 Cool Beginner Python Tricks That Will Make Your Life Easier')
 
 #
 
@@ -12,7 +12,7 @@ st.write("The compactness of Python can make a developer’s life a lot easier w
 st.header("1. Walrus operator")
 st.write("The Walrus or := operator is one of the latest additions to python 3.8. It is an assignment operator that lets you assign value to a variable within an expression like conditional statements, loops, etc.")
 st.markdown('**Example**:')
-st.write ("If we want to check and print the length of a list:")
+st.write("If we want to check and print the length of a list:")
 walrus = '''Mylist = [1,2,3]
 if(l := len(mylist) > 2)
 print(l)'''
@@ -29,7 +29,6 @@ string.split()'''
 st.code(string, language='python')
 st.markdown('**Output**:')
 st.success("['hello','world']")
-
 
 
 st.header("3. Reversing a string")
@@ -79,7 +78,6 @@ st.markdown('**Output**:')
 st.success("{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}")
 
 
-
 st.header("6. Assigning multiple list values to a variable")
 st.write("If you want to assign some specific values of a list to a variable and all the remaining values to another variable in a list format, you can use the following technique:")
 st.markdown('**Example**:')
@@ -89,11 +87,10 @@ print(f”a =”,a)
 print(f”b =”,b)'''
 st.code(var, language='python')
 st.markdown('**Output**:')
-out='''a = 1
+out = '''a = 1
 b = [2, 3, 4, 5]'''
 st.success(out)
 st.write("This process is also called list unpacking and you can apply this method for more than 2 variables also!")
-
 
 
 st.header("7. Remove duplicate list items")
@@ -104,9 +101,8 @@ newlist = set(mylist)
 print(newlist)'''
 st.code(lis, language='python')
 st.markdown('**Output**:')
-out='''{1, 2, 3, 4, 5, 6, 7, 8, 9}'''
+out = '''{1, 2, 3, 4, 5, 6, 7, 8, 9}'''
 st.success(out)
-
 
 
 st.header("8. Lambda function")
@@ -117,9 +113,8 @@ lam = '''mul = lambda a,b: a*b
 mul(5,6)'''
 st.code(lam, language='python')
 st.markdown('**Output**:')
-out='''30'''
+out = '''30'''
 st.success(out)
-
 
 
 st.header("9. Swapping variable value")
@@ -132,10 +127,9 @@ print(f’a = ‘,a)
 print(f’b = ‘,b)'''
 st.code(var_val, language='python')
 st.markdown('**Output**:')
-out='''a = 200
+out = '''a = 200
 b = 100'''
 st.success(out)
-
 
 
 st.header("10. Use a password in your code")
@@ -149,7 +143,7 @@ else:
     print(“wrong password”)'''
 st.code(passw, language='python')
 st.markdown('**Output**:')
-out='''password: **** [abcd]
+out = '''password: **** [abcd]
 Welcome stranger!
 Password: **** [abdc]
 Wrong password'''
