@@ -159,3 +159,6 @@ Welcome stranger!
 Password: **** [abdc]
 Wrong password'''
 st.code(out)
+
+st.header("Conclusion")
+st.write("These were a few amazing Python tips and tricks which will make your work a lot easier while coding. There are many more shortcuts like these that you can explore from the official documentation or any other website. Note: This article contains an affiliate link. This means that if you click on it and choose to buy the resource I linked above, a small portion of your subscription fee will go to me. However, the recommended resource is experienced by me and helped me in my data science career journey.")
