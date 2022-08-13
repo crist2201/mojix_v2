@@ -28,12 +28,7 @@ if(l := len(mylist) > 2)
 print(l)'''
 st.code(walrus, language='python')
 st.markdown('**_Output_**:')
-st.write('''
-<style>
-.element-container{
-    background-color: green
-}
-</style>''', 3)
+st.code(3)
 
 
 st.header("2. Splitting a string")
@@ -43,7 +38,7 @@ string = '''hello world
 string.split()'''
 st.code(string, language='python')
 st.markdown('**_Output_**:')
-st.success("['hello','world']")
+st.code("['hello','world']")
 
 
 st.header("3. Reversing a string")
@@ -54,7 +49,7 @@ a=str[::-1]
 print(a)'''
 st.code(stringr, language='python')
 st.markdown('**_Output_**:')
-st.success("!dlrow olleh")
+st.code("!dlrow olleh")
 
 
 st.header("4. Merging two dictionaries")
@@ -66,7 +61,7 @@ d3 = {**d1, **d2}
 print(d3)'''
 st.code(dic, language='python')
 st.markdown('**_Output_**:')
-st.success("{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}")
+st.code("{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}")
 
 
 st.header("5. The zip() function")
@@ -81,7 +76,7 @@ st.markdown('**_Output_**:')
 out = '''red apple
 yellow banana
 green mango'''
-st.success(out)
+st.code(out)
 
 st.write("The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.")
 st.markdown('**_Example_**:')
@@ -91,7 +86,7 @@ dictionary = dict(zip(students, marks))
 print(dictionary)'''
 st.code(zip_fun, language='python')
 st.markdown('**_Output_**:')
-st.success("{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}")
+st.code("{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}")
 
 
 st.header("6. Assigning multiple list values to a variable")
@@ -105,7 +100,7 @@ st.code(var, language='python')
 st.markdown('**_Output_**:')
 out = '''a = 1
 b = [2, 3, 4, 5]'''
-st.success(out)
+st.code(out)
 st.write("This process is also called list unpacking and you can apply this method for more than 2 variables also!")
 
 
@@ -118,7 +113,7 @@ print(newlist)'''
 st.code(lis, language='python')
 st.markdown('**_Output_**:')
 out = '''{1, 2, 3, 4, 5, 6, 7, 8, 9}'''
-st.success(out)
+st.code(out)
 
 
 st.header("8. Lambda function")
@@ -130,7 +125,7 @@ mul(5,6)'''
 st.code(lam, language='python')
 st.markdown('**_Output_**:')
 out = '''30'''
-st.success(out)
+st.code(out)
 
 
 st.header("9. Swapping variable value")
@@ -143,9 +138,9 @@ print(f’a = ‘,a)
 print(f’b = ‘,b)'''
 st.code(var_val, language='python')
 st.markdown('**_Output_**:')
-st.text_area(out, '''a = 200
-b = 100''')
-# st.write(out)
+out = '''a = 200
+b = 100'''
+st.code(out)
 
 
 st.header("10. Use a password in your code")
@@ -163,4 +158,4 @@ out = '''password: **** [abcd]
 Welcome stranger!
 Password: **** [abdc]
 Wrong password'''
-st.success(out)
+st.code(out)
