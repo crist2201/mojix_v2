@@ -77,6 +77,7 @@ out = '''red apple
 yellow banana
 green mango'''
 st.success(out)
+st.success(out)
 st.write("The zip() function can also be used for combining two lists into a dictionary. This method can be really helpful while grouping data from the list.")
 st.markdown('**_Example_**:')
 zip_fun = '''students = [“Rajesh”, “kumar”, “Kriti”]
