@@ -137,9 +137,9 @@ print(f’a = ‘,a)
 print(f’b = ‘,b)'''
 st.code(var_val, language='python')
 st.markdown('**Output**:')
-out = '''a = 200
-b = 100'''
-st.write.success(out)
+st.text_area(out, '''a = 200
+b = 100''')
+# st.write(out)
 
 
 st.header("10. Use a password in your code")
