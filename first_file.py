@@ -139,7 +139,7 @@ st.code(var_val, language='python')
 st.markdown('**Output**:')
 out = '''a = 200
 b = 100'''
-st.success(out)
+st.write.success(out)
 
 
 st.header("10. Use a password in your code")
